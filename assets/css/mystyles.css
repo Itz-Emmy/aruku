@@ -178,7 +178,7 @@
 .survey-component {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-image: url(https://assets.website-files.com/62d161b…/6321d26…_REF%20Finance.png);
   background-position: 50% 50%;
   background-size: cover;
@@ -262,6 +262,15 @@
   filter: hue-rotate(170deg);
 }
 
+.row.g-5.nomics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.cta_image.is-refinance {
+  display: block;
+}
 
 @media (min-width: 576px) {
   .col-sm-6 {
@@ -278,7 +287,10 @@
     margin: 0 10px;
 }
 
-
+.row.g-5.nomics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media (min-width: 576px) {
@@ -299,6 +311,8 @@
     left: 0%;
 }
 
+
+
 }
 
 @media (min-width: 480px) {
@@ -308,9 +322,23 @@
     gap: 15px;
     margin: 0 20px;
   }
+  
+
 }
 
 @media (min-width: 360px) {
+
+  .header-banner-image img {
+    width: 100%;
+    position: relative;
+    top: -35px;
+  }
+
+
+.cta_image.is-refinance.airdrop img {
+    display: none;
+}
+
   .token-exchanges_companies {
 
     grid-template-columns: repeat(2, 1fr);
@@ -346,76 +374,10 @@
   bottom: 5px;
   top: 10px;
 }
+
+.row.g-5.nomics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-
-
-/* @media (min-width: 380px) {
-
-  .token-exchanges_companies {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 0 auto;
-  }
-
-  .token-exchanges_company-text {
-    position: relative;
-  }
-
-  .token-exchanges_company-text img {
-    position: relative;
-    top: -70px;
-    left: 70px;
-    
-    filter: hue-rotate(0deg);
-    transition: filter 0.5s ease;
 }
-
-.sushiswap {
-  position: relative;
-  top: 5px;
-  left: -40px;
-  margin-left: 15px;
-}
-
-.to-stake img {
-  margin: 0;
-}
-
-.token-exchanges_company-text.to-stake.to-stake-aruku img {
-  
-  top: 0;
-  left: 0;
-}
-
-.coming-soon.to-uniswap {
-  top: 10px;
-  width: 25%;
-  
-}
-
-
-}  */
-
-/* @media (min-width: 380px) {
-  .uni-text {
-    
-    position: relative;
-    top: 25px;
-    left: -20px;
-  }
- 
-  .uniswap {
-    width: 35%;
-  } 
-} */
-
-/* @media (min-width: 380px){
-  img.coming-soon.stake {
-    top: 0;
-}
-img.uniswap {
-  top: 0;
-}
-} */
