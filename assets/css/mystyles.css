@@ -8,11 +8,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr; */
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 15px; */
+  margin-left: 60px;
 }
+
+/* .to-stake-aruku {
+  top: -35px;
+  left: 50%;
+} */
 
 .token-exchanges_company-logo {
   display: flex;
@@ -48,36 +53,54 @@
 .token-exchanges_company-text {
   color: #c1c7cb;
   opacity: 0.57;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: Georgia, "Times New Roman", Times, serif;
   position: relative;
 }
 
+.token-exchanges_company-text.uni-swap {
+  position: relative;
+  top: 15px;
+}
+
+.coming-soon-img.uni-swap img {
+  position: relative;
+  top: -10px;
+}
+
 .token-exchanges_company-text img {
-  width: 90%;
+  width: 20%;
   filter: hue-rotate(0deg);
   transition: filter 0.5s ease;
-  margin: 0 20px;
+  /* margin: ; */
+  
 }
 
 .token-exchanges_company-text img:hover {
   filter: hue-rotate(170deg);
 }
 
-.token-exchanges_company-text .coming-soon {
-  position: absolute;
-  width: 20%;
-  top: -35px;
-  left: 40%;
+
+
+  .to-stake {
+    left: -25px;
   }
 
-  .token-exchanges_company-text .to-uniswap {
+  .token-exchanges_company-text.to-stake.to-stake-aruku img {
+    position: relative;
     top: -35px;
+    left: 70%;
+}
+
+  .to-stake img {
+    margin-left: 50%;
   }
 
-.uniswap {
-  width: 100%;
+ .aruku-text {
+  color: #28dbd1;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .logo-embed {
@@ -219,28 +242,180 @@
   grid-row-gap: 1.5rem;
 }
 
+.coming-soon-img {
+  position: absolute;
+  right: -55px;
+  width: 50%;
+}
+
+.token-exchanges_company-logo {
+  position: relative;
+}
+
+.coming-soon-img img {
+  width: 50%;
+  filter: hue-rotate(0deg);
+  transition: filter 0.5s ease;
+}
+
+.coming-soon-img img:hover {
+  filter: hue-rotate(170deg);
+}
+
+
 @media (min-width: 576px) {
   .col-sm-6 {
  
-    width: 30%;
+    width: 80%;
 }
 
 .findaruku {
   max-width: 95vw;
 }
 
+
 .token-exchanges_company-text img {
     margin: 0 10px;
 }
 
-.token-exchanges_company-text .coming-soon {
-  top: -35px;
-  left: 40%;
-  }
-
-  .token-exchanges_company-text .to-uniswap {
-    top: -8px;
-  }
 
 }
 
+@media (min-width: 576px) {
+
+.token-exchanges_companies {
+
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+
+}
+
+@media (min-width: 1024px) {
+  .token-exchanges_company-text.to-stake.to-stake-aruku img {
+    
+    top: 0;
+    left: 0%;
+}
+
+}
+
+@media (min-width: 480px) {
+  .token-exchanges_companies {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 360px) {
+  .token-exchanges_companies {
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 20px;
+  }
+
+  .coming-soon-img {
+    position: relative;
+    right: -5px;
+    width: 50%;
+    bottom: 5px;
+}
+
+.to-stake {
+  left: 0;
+  top: 5px;
+}
+
+.coming-soon-img.uni-swap img {
+  position: relative;
+  top: 0;
+}
+.token-exchanges_company-text.uni-swap {
+  position: relative;
+  top: 0;
+}
+
+.coming-soon-img.nft-stake {
+  position: relative;
+  right: -5px;
+  width: 50%;
+  bottom: 5px;
+  top: 10px;
+}
+}
+
+
+
+/* @media (min-width: 380px) {
+
+  .token-exchanges_companies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .token-exchanges_company-text {
+    position: relative;
+  }
+
+  .token-exchanges_company-text img {
+    position: relative;
+    top: -70px;
+    left: 70px;
+    
+    filter: hue-rotate(0deg);
+    transition: filter 0.5s ease;
+}
+
+.sushiswap {
+  position: relative;
+  top: 5px;
+  left: -40px;
+  margin-left: 15px;
+}
+
+.to-stake img {
+  margin: 0;
+}
+
+.token-exchanges_company-text.to-stake.to-stake-aruku img {
+  
+  top: 0;
+  left: 0;
+}
+
+.coming-soon.to-uniswap {
+  top: 10px;
+  width: 25%;
+  
+}
+
+
+}  */
+
+/* @media (min-width: 380px) {
+  .uni-text {
+    
+    position: relative;
+    top: 25px;
+    left: -20px;
+  }
+ 
+  .uniswap {
+    width: 35%;
+  } 
+} */
+
+/* @media (min-width: 380px){
+  img.coming-soon.stake {
+    top: 0;
+}
+img.uniswap {
+  top: 0;
+}
+} */
